@@ -11,6 +11,7 @@ const translations = {
   es: {
     "nav.sectors": "Sectores",
     "nav.how": "Cómo funciona",
+    "nav.testimonials": "Testimonios",
     "nav.pricing": "Precios",
     "nav.contact": "Contacto",
     "nav.cta": "Auditoría gratuita",
@@ -48,8 +49,19 @@ const translations = {
     "method.s4.title": "Cuidado continuo",
     "method.s4.body": "Monitorizamos, ajustamos y añadimos mejoras cada mes.",
 
-        "why.title": "La herramienta correcta para cada tarea, no una plantilla genérica",
-         "why.body": "Usamos n8n cuando tiene sentido — para automatizaciones directas de integración y flujo de datos, es rápido y fiable. Pero cuando la tarea requiere criterio real (leer un caso, decidir cómo triarlo, actuar en consecuencia), construimos un agente a medida, no una plantilla genérica con el logo cambiado. Esa es la diferencia técnica. La otra es de confianza: trabajamos con datos sensibles de tus clientes, así que el cumplimiento RGPD no es un añadido, es la base.",
+    "why.title": "La herramienta correcta para cada tarea, no una plantilla genérica",
+    "why.body": "Usamos n8n cuando tiene sentido — para automatizaciones directas de integración y flujo de datos, es rápido y fiable. Pero cuando la tarea requiere criterio real (leer un caso, decidir cómo triarlo, actuar en consecuencia), construimos un agente a medida, no una plantilla genérica con el logo cambiado. Esa es la diferencia técnica. La otra es de confianza: trabajamos con datos sensibles de tus clientes, así que el cumplimiento RGPD no es un añadido, es la base.",
+
+    "testimonials.title": "Empresas que ya han automatizado con Gradient",
+    "testimonials.t1.quote": "Gradient nos construyó una web nueva y varios agentes hechos a medida para el negocio. Todo el proceso fue fácil, entendieron lo que necesitábamos y lo cumplieron. Muy contentos con la web y con cómo los agentes han asumido tareas que antes hacíamos a mano.",
+    "testimonials.t1.name": "Damodar",
+    "testimonials.t1.service": "Web + agentes a medida",
+    "testimonials.t2.quote": "Gran trabajo montando la automatización con n8n. Nos ha ahorrado tiempo de verdad en tareas que hacíamos a mano, y funciona sin complicaciones.",
+    "testimonials.t2.name": "Usha Rekha",
+    "testimonials.t2.service": "Automatización con n8n",
+    "testimonials.t3.quote": "Excelente trabajo. Los agentes hechos a medida han sido muy útiles en el día a día, y el servicio de Gradient en general ha sido excelente de principio a fin.",
+    "testimonials.t3.name": "Deva Nag Varsheeth",
+    "testimonials.t3.service": "Agentes a medida",
 
     "pricing.title": "Precios claros, sin sorpresas",
     "pricing.badge": "Más elegido",
@@ -64,8 +76,8 @@ const translations = {
     "pricing.t3.desc": "Monitorización, ajustes, integraciones que se rompen, y pequeñas mejoras cada mes.",
     "pricing.footnote": "Los proyectos elegibles pueden financiarse total o parcialmente a través del programa Kit Digital.",
 
-    "founding.title": "Buscamos 3 clientes fundadores este trimestre",
-    "founding.body": "Gradient es un estudio nuevo — y lo decimos sin rodeos. A cambio de ser un caso de estudio documentado, con cifras reales de horas ahorradas y errores evitados, tu primer proyecto piloto tiene un precio reducido. Oferta limitada a 3 despachos.",
+    "founding.title": "Precio de cliente fundador — plazas limitadas este trimestre",
+    "founding.body": "Gradient trabaja con un número reducido de despachos a la vez para dar seguimiento cercano a cada proyecto. A cambio de ser uno de los primeros casos documentados de este trimestre, con cifras reales de horas ahorradas, tu primer proyecto piloto tiene un precio reducido. Oferta limitada a 3 despachos.",
     "founding.cta": "Reserva tu plaza",
 
     "contact.title": "Hablemos de tu despacho",
@@ -83,6 +95,7 @@ const translations = {
   en: {
     "nav.sectors": "Sectors",
     "nav.how": "How it works",
+    "nav.testimonials": "Testimonials",
     "nav.pricing": "Pricing",
     "nav.contact": "Contact",
     "nav.cta": "Free audit",
@@ -120,8 +133,19 @@ const translations = {
     "method.s4.title": "Ongoing care",
     "method.s4.body": "We monitor, tune, and add improvements every month.",
 
-        "why.title": "The right tool for each task, not a generic template",
-         "why.body": "We use n8n when it makes sense — for straightforward integration and data-flow automation, it's fast and reliable. But when a task needs real judgment (reading a case, deciding how to triage it, acting on it), we build a custom agent, not a generic template with the logo swapped. That's the technical difference. The other one is trust: we work with your clients' sensitive data, so GDPR compliance isn't an add-on, it's the foundation.",
+    "why.title": "The right tool for each task, not a generic template",
+    "why.body": "We use n8n when it makes sense — for straightforward integration and data-flow automation, it's fast and reliable. But when a task needs real judgment (reading a case, deciding how to triage it, acting on it), we build a custom agent, not a generic template with the logo swapped. That's the technical difference. The other one is trust: we work with your clients' sensitive data, so GDPR compliance isn't an add-on, it's the foundation.",
+
+    "testimonials.title": "Businesses already automating with Gradient",
+    "testimonials.t1.quote": "Gradient built us a new website and a set of custom-coded agents for the business. The whole process was smooth, they understood what we needed and delivered it properly. Really happy with both the site and how the agents have taken over work we used to do manually.",
+    "testimonials.t1.name": "Damodar",
+    "testimonials.t1.service": "Website + custom agents",
+    "testimonials.t2.quote": "Great work setting up automation for us with n8n. It's saved us real time on tasks we used to do by hand, and it just works, no fuss.",
+    "testimonials.t2.name": "Usha Rekha",
+    "testimonials.t2.service": "n8n automation",
+    "testimonials.t3.quote": "Excellent work. The custom-built agents have been really useful day to day, and Gradient's service overall has been excellent from start to finish.",
+    "testimonials.t3.name": "Deva Nag Varsheeth",
+    "testimonials.t3.service": "Custom agents",
 
     "pricing.title": "Clear pricing, no surprises",
     "pricing.badge": "Most chosen",
@@ -136,8 +160,8 @@ const translations = {
     "pricing.t3.desc": "Monitoring, tuning, fixing broken integrations, and small improvements every month.",
     "pricing.footnote": "Eligible projects can be partially or fully funded through Spain's Kit Digital program.",
 
-    "founding.title": "We're taking on 3 founding clients this quarter",
-    "founding.body": "Gradient is a new studio — and we're not going to pretend otherwise. In exchange for being a documented case study, with real numbers on hours saved and errors caught, your first pilot project comes at a reduced rate. Limited to 3 firms.",
+    "founding.title": "Founding-client pricing — limited spots this quarter",
+    "founding.body": "Gradient works with a small number of firms at a time, so every project gets close, hands-on attention. In exchange for being one of this quarter's first documented case studies, with real numbers on hours saved, your first pilot project comes at a reduced rate. Limited to 3 firms.",
     "founding.cta": "Claim your spot",
 
     "contact.title": "Let's talk about your office",
@@ -194,7 +218,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
 });
 
 // -------- 4. SCROLL REVEAL --------
-const revealTargets = document.querySelectorAll("section h2, .sector-card, .price-card, .step, .stat");
+const revealTargets = document.querySelectorAll("section h2, .sector-card, .price-card, .step, .stat, .testimonial-card");
 revealTargets.forEach(el => el.setAttribute("data-reveal", ""));
 
 const observer = new IntersectionObserver((entries) => {
