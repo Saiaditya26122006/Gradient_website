@@ -423,12 +423,33 @@ section h2{
   border-radius:999px;
 }
 .price-card h3{ font-size:1.15rem; font-weight:500; color:var(--ink-1); margin-bottom:18px; }
+.price-tier-name{ font-family:'Fraunces', serif; font-style:italic; }
 .price-amount{ font-family:'Fraunces', serif; font-size:2.4rem; margin-bottom:6px; }
 .price-period{ font-size:1rem; color:var(--ink-2); }
 .price-note{ font-size:0.82rem; color:var(--g-4); margin-bottom:24px; }
 .price-card p:last-of-type{ color:var(--ink-1); font-size:0.95rem; line-height:1.65; margin-top:auto; }
+.pricing-subtitle{ margin-top:-8px; margin-bottom:8px; }
+.retainer-strip{
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-top:32px;
+  padding:24px 28px;
+  background:var(--bg-1);
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+}
+.retainer-name{
+  font-family:'Fraunces', serif;
+  font-style:italic;
+  font-size:1.2rem;
+  color:var(--ink-0);
+}
+.retainer-price{ font-family:'Fraunces', serif; font-size:1.4rem; color:var(--g-4); }
+.retainer-desc{ font-size:0.92rem; color:var(--ink-1); flex:1 1 260px; }
 .pricing-footnote{
-  margin-top:36px;
+  margin-top:24px;
   font-size:0.88rem;
   color:var(--ink-2);
   font-style:italic;
