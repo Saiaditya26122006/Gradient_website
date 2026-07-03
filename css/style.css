@@ -6,16 +6,16 @@
 
 :root{
   /* canvas */
-  --bg-0: #0E0B10;         /* deep warm-black base */
-  --bg-1: #171219;         /* panel */
-  --bg-2: #1F1922;         /* raised panel */
-  --line: rgba(245,241,234,0.10);
-  --line-strong: rgba(245,241,234,0.18);
+  --bg-0: #FAF6EF;         /* paper-white base */
+  --bg-1: #F1EBDF;         /* panel */
+  --bg-2: #E7DECD;         /* raised panel */
+  --line: rgba(30,20,25,0.09);
+  --line-strong: rgba(30,20,25,0.16);
 
   /* text */
-  --ink-0: #F5F1EA;        /* warm off-white, primary text */
-  --ink-1: #C9C0C9;        /* secondary */
-  --ink-2: #8F8794;        /* muted */
+  --ink-0: #241A22;        /* near-black warm ink, primary text */
+  --ink-1: #5C4E56;        /* secondary */
+  --ink-2: #8C7C83;        /* muted */
 
   /* signature gradient: aubergine -> copper */
   --g-1: #5B2A6E;
@@ -71,8 +71,8 @@ a{ color:inherit; text-decoration:none; }
   inset:0;
   pointer-events:none;
   z-index:999;
-  opacity:0.045;
-  mix-blend-mode:overlay;
+  opacity:0.05;
+  mix-blend-mode:multiply;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
@@ -81,7 +81,7 @@ a{ color:inherit; text-decoration:none; }
   position:sticky;
   top:0;
   z-index:100;
-  background:rgba(14,11,16,0.78);
+  background:rgba(250,246,239,0.82);
   backdrop-filter:blur(14px) saturate(140%);
   border-bottom:1px solid var(--line);
 }
@@ -190,9 +190,9 @@ a{ color:inherit; text-decoration:none; }
   position:absolute;
   inset:0;
   background:
-    radial-gradient(circle at 18% 30%, rgba(91,42,110,0.55), transparent 42%),
-    radial-gradient(circle at 78% 18%, rgba(217,123,63,0.45), transparent 45%),
-    radial-gradient(circle at 55% 65%, rgba(139,63,107,0.4), transparent 50%);
+    radial-gradient(circle at 18% 30%, rgba(91,42,110,0.30), transparent 42%),
+    radial-gradient(circle at 78% 18%, rgba(217,123,63,0.26), transparent 45%),
+    radial-gradient(circle at 55% 65%, rgba(139,63,107,0.22), transparent 50%);
   filter:blur(60px);
   animation:drift 22s ease-in-out infinite alternate;
 }
@@ -463,7 +463,7 @@ section h2{
 .founding-inner{ max-width:680px; margin:0 auto; }
 .founding h2{ color:#0E0B10; margin:0 auto 20px; }
 .founding p{ color:rgba(14,11,16,0.78); font-size:1.05rem; line-height:1.7; margin-bottom:36px; }
-.founding .btn-primary{ background:#0E0B10; color:var(--ink-0); box-shadow:0 8px 24px -8px rgba(0,0,0,0.4); }
+.founding .btn-primary{ background:#0E0B10; color:#F5F1EA; box-shadow:0 8px 24px -8px rgba(0,0,0,0.4); }
 .founding .btn-primary:hover{ box-shadow:0 12px 30px -8px rgba(0,0,0,0.5); }
 
 /* contact */
