@@ -99,16 +99,12 @@ a{ color:inherit; text-decoration:none; }
   font-size:1.15rem;
   font-weight:500;
 }
-.logo-mark{
-  width:32px; height:32px;
-  border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  background:var(--gradient-signature);
-  color:#0E0B10;
-  font-weight:700;
-  font-size:0.95rem;
+.logo-mark-img{
+  height:38px;
+  width:auto;
+  display:block;
 }
-.logo-mark.small{ width:24px; height:24px; font-size:0.75rem; }
+.logo-mark-img.small{ height:26px; }
 .logo-word{ letter-spacing:-0.01em; }
 
 .main-nav{
@@ -492,6 +488,7 @@ section h2{
 .site-footer{ border-top:1px solid var(--line); padding:48px 0; }
 .footer-inner{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
 .footer-brand{ display:flex; align-items:center; gap:10px; font-size:0.92rem; color:var(--ink-1); }
+.footer-tagline2{ width:100%; font-family:'Fraunces', serif; font-style:italic; font-size:0.95rem; color:var(--ink-1); margin:-4px 0 0; }
 .footer-legal{ font-size:0.82rem; color:var(--ink-2); }
 
 /* reveal-on-scroll */
