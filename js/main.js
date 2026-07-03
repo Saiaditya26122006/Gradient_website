@@ -94,6 +94,7 @@ const translations = {
     "contact.note": "Se abrirá tu cliente de correo con el mensaje ya redactado.",
 
     "footer.tagline": "Gradient — Barcelona, España",
+    "footer.tagline2": "Donde termina el trabajo repetitivo",
     "footer.legal": "Estudio independiente de automatización con IA. RGPD por diseño."
   },
   en: {
@@ -182,6 +183,7 @@ const translations = {
     "contact.note": "This opens your email client with the message pre-written.",
 
     "footer.tagline": "Gradient — Barcelona, Spain",
+    "footer.tagline2": "Where repetitive work ends",
     "footer.legal": "Independent AI automation studio. GDPR by design."
   }
 };
