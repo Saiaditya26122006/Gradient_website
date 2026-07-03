@@ -48,8 +48,8 @@ const translations = {
     "method.s4.title": "Cuidado continuo",
     "method.s4.body": "Monitorizamos, ajustamos y añadimos mejoras cada mes.",
 
-    "why.title": "Por qué Gradient, y no una plantilla de n8n",
-    "why.body": "Casi todo lo que se vende hoy como «IA» para negocios profesionales es un panel o un chatbot con guion. Un agente de verdad lee, decide, actúa y deja constancia de principio a fin, sin intervención manual — esa es la diferencia técnica. La otra es de confianza: trabajamos con datos sensibles de tus clientes, así que el cumplimiento RGPD no es un añadido, es la base.",
+        "why.title": "La herramienta correcta para cada tarea, no una plantilla genérica",
+         "why.body": "Usamos n8n cuando tiene sentido — para automatizaciones directas de integración y flujo de datos, es rápido y fiable. Pero cuando la tarea requiere criterio real (leer un caso, decidir cómo triarlo, actuar en consecuencia), construimos un agente a medida, no una plantilla genérica con el logo cambiado. Esa es la diferencia técnica. La otra es de confianza: trabajamos con datos sensibles de tus clientes, así que el cumplimiento RGPD no es un añadido, es la base.",
 
     "pricing.title": "Precios claros, sin sorpresas",
     "pricing.badge": "Más elegido",
@@ -120,8 +120,8 @@ const translations = {
     "method.s4.title": "Ongoing care",
     "method.s4.body": "We monitor, tune, and add improvements every month.",
 
-    "why.title": "Why Gradient, not another n8n template",
-    "why.body": "Almost everything sold as “AI” for professional services today is a dashboard or a scripted chatbot. A real agent reads, decides, acts, and logs what it did — start to finish, without manual intervention. That's the technical difference. The other one is trust: we work with your clients' sensitive data, so GDPR compliance isn't an add-on, it's the foundation.",
+        "why.title": "The right tool for each task, not a generic template",
+         "why.body": "We use n8n when it makes sense — for straightforward integration and data-flow automation, it's fast and reliable. But when a task needs real judgment (reading a case, deciding how to triage it, acting on it), we build a custom agent, not a generic template with the logo swapped. That's the technical difference. The other one is trust: we work with your clients' sensitive data, so GDPR compliance isn't an add-on, it's the foundation.",
 
     "pricing.title": "Clear pricing, no surprises",
     "pricing.badge": "Most chosen",
