@@ -1,5 +1,5 @@
 /* ========================================================
-   GRADIENT — i18n, contact form, scroll reveals
+   GRADIENT: i18n, contact form, scroll reveals
    ======================================================== */
 
 // -------- 1. TRANSLATIONS --------
@@ -23,20 +23,20 @@ const translations = {
     "hero.cta2": "Ver cómo funciona ↓",
 
     "problem.title": "El mismo problema, todos los días",
-    "problem.body": "Facturas que se transcriben a mano. Documentos que se clasifican uno a uno. Clientes que preguntan lo mismo por email cada semana. Plazos que se persiguen en una hoja de cálculo. Son tareas que consumen entre 20 y 40 horas al mes en un despacho de 4 a 10 personas — y ninguna de ellas requiere criterio humano.",
+    "problem.body": "Facturas que se transcriben a mano. Documentos que se clasifican uno a uno. Clientes que preguntan lo mismo por email cada semana. Plazos que se persiguen en una hoja de cálculo. Son tareas que consumen entre 20 y 40 horas al mes en un despacho de 4 a 10 personas, y ninguna de ellas requiere criterio humano.",
     "problem.stat1": "horas/mes recuperables en una oficina de 4-10 personas",
     "problem.stat2": "de esas horas requiere criterio humano",
     "problem.stat3": "semanas para tener el primer piloto funcionando",
 
     "sectors.title": "Construido para tu sector, no para “empresas”",
     "sectors.legal.title": "Bufetes de abogados",
-    "sectors.legal.body": "Un agente que hace el triaje de nuevos casos, comprueba conflictos de interés básicos y agenda la primera consulta — antes de que tú intervengas.",
-    "sectors.legal.tag": "Nunca sustituye el consejo legal — solo la admisión",
+    "sectors.legal.body": "Un agente que hace el triaje de nuevos casos, comprueba conflictos de interés básicos y agenda la primera consulta, antes de que tú intervengas.",
+    "sectors.legal.tag": "Nunca sustituye el consejo legal: solo la admisión",
     "sectors.realestate.title": "Inmobiliarias",
-    "sectors.realestate.body": "Cualifica leads automáticamente por presupuesto, zona y plazos, y hace seguimiento de los que se enfrían — para que no se pierda ni un contacto.",
+    "sectors.realestate.body": "Cualifica leads automáticamente por presupuesto, zona y plazos, y hace seguimiento de los que se enfrían para que no se pierda ni un contacto.",
     "sectors.realestate.tag": "Integrado con tu calendario de visitas",
     "sectors.gestoria.title": "Gestorías y asesorías",
-    "sectors.gestoria.body": "Lee facturas entrantes, extrae las partidas y las registra en tu software de contabilidad — sin retipear nada.",
+    "sectors.gestoria.body": "Lee facturas entrantes, extrae las partidas y las registra en tu software de contabilidad, sin retipear nada.",
     "sectors.gestoria.tag": "Compatible con Kit Digital",
 
     "method.title": "De diagnóstico a sistema en producción",
@@ -50,18 +50,18 @@ const translations = {
     "method.s4.body": "Monitorizamos, ajustamos y añadimos mejoras cada mes.",
 
     "why.title": "La herramienta correcta para cada tarea, no una plantilla genérica",
-    "why.body": "Usamos n8n cuando tiene sentido — para automatizaciones directas de integración y flujo de datos, es rápido y fiable. Pero cuando la tarea requiere criterio real (leer un caso, decidir cómo triarlo, actuar en consecuencia), construimos un agente a medida, no una plantilla genérica con el logo cambiado. Esa es la diferencia técnica. La otra es de confianza: trabajamos con datos sensibles de tus clientes, así que el cumplimiento RGPD no es un añadido, es la base.",
+    "why.body": "Usamos n8n cuando tiene sentido. Para automatizaciones directas de integración y flujo de datos es rápido y fiable. Pero cuando la tarea requiere criterio real (leer un caso, decidir cómo triarlo, actuar en consecuencia), construimos un agente a medida, no una plantilla genérica con el logo cambiado. Esa es la diferencia técnica. La otra es de confianza: trabajamos con datos sensibles de tus clientes, así que el cumplimiento RGPD no es un añadido, es la base.",
 
     "testimonials.title": "Empresas que ya han automatizado con Gradient",
     "testimonials.t1.quote": "Gradient nos construyó una web nueva y varios agentes hechos a medida para el negocio. Todo el proceso fue fácil, entendieron lo que necesitábamos y lo cumplieron. Muy contentos con la web y con cómo los agentes han asumido tareas que antes hacíamos a mano.",
     "testimonials.t1.name": "Damodar",
-    "testimonials.t1.service": "Paquete Momentum — web + agente a medida",
+    "testimonials.t1.service": "Paquete Momentum: web + agente a medida",
     "testimonials.t2.quote": "Gran trabajo montando la automatización con n8n. Nos ha ahorrado tiempo de verdad en tareas que hacíamos a mano, y funciona sin complicaciones.",
     "testimonials.t2.name": "Usha Rekha",
-    "testimonials.t2.service": "Paquete Step — automatización con n8n (solo agentes)",
+    "testimonials.t2.service": "Paquete Step: automatización con n8n (solo agentes)",
     "testimonials.t3.quote": "Excelente trabajo. Los agentes hechos a medida han sido muy útiles en el día a día, y el servicio de Gradient en general ha sido excelente de principio a fin.",
     "testimonials.t3.name": "Deva Nag Varsheeth",
-    "testimonials.t3.service": "Paquete Momentum — agente a medida (solo agentes)",
+    "testimonials.t3.service": "Paquete Momentum: agente a medida (solo agentes)",
 
     "pricing.title": "Precios fijos, sin sorpresas",
     "pricing.subtitle": "La mayoría de estudios cotizan por hora, tras un descubrimiento largo, con un precio final que nadie sabe hasta el cierre. Aquí no: tres paquetes, precio fijo, publicado antes de que hables con nosotros.",
@@ -78,10 +78,10 @@ const translations = {
     "pricing.t4.name": "Drift",
     "pricing.t4.desc": "Cuidado continuo tras cualquier paquete: monitorización, ajustes y mejoras cada mes.",
     "pricing.permo": "/mes",
-    "pricing.footnote": "¿Ya tienes web? Cada paquete tiene una versión solo de agentes, más económica — pregúntanos. Los proyectos elegibles pueden financiarse total o parcialmente a través del programa Kit Digital.",
+    "pricing.footnote": "¿Ya tienes web? Cada paquete tiene una versión solo de agentes, más económica. Pregúntanos. Los proyectos elegibles pueden financiarse total o parcialmente a través del programa Kit Digital.",
 
     "founding.title": "Plazas limitadas mientras construimos nuestro portfolio",
-    "founding.body": "Gradient trabaja con un número reducido de despachos a la vez para dar seguimiento cercano a cada proyecto. Los precios de arriba son los mismos para todos — sin descuentos ocultos, sin sorpresas — pero solo abrimos un puñado de plazas cada trimestre mientras documentamos nuestros primeros casos de estudio.",
+    "founding.body": "Gradient trabaja con un número reducido de despachos a la vez para dar seguimiento cercano a cada proyecto. Los precios de arriba son los mismos para todos: sin descuentos ocultos, sin sorpresas. Pero solo abrimos un puñado de plazas cada trimestre mientras documentamos nuestros primeros casos de estudio.",
     "founding.cta": "Reserva tu plaza",
 
     "contact.title": "Hablemos de tu despacho",
@@ -93,7 +93,7 @@ const translations = {
     "contact.send": "Enviar",
     "contact.note": "Se abrirá tu cliente de correo con el mensaje ya redactado.",
 
-    "footer.tagline": "Gradient — Barcelona, España",
+    "footer.tagline": "Gradient · Barcelona, España",
     "footer.tagline2": "Donde termina el trabajo repetitivo",
     "footer.legal": "Estudio independiente de automatización con IA. RGPD por diseño."
   },
@@ -112,20 +112,20 @@ const translations = {
     "hero.cta2": "See how it works ↓",
 
     "problem.title": "The same problem, every day",
-    "problem.body": "Invoices typed in by hand. Documents sorted one by one. Clients asking the same question by email every week. Deadlines chased in a spreadsheet. These tasks eat 20 to 40 hours a month in a 4-to-10-person office — and none of them actually need human judgment.",
+    "problem.body": "Invoices typed in by hand. Documents sorted one by one. Clients asking the same question by email every week. Deadlines chased in a spreadsheet. These tasks eat 20 to 40 hours a month in a 4-to-10-person office, and none of them actually need human judgment.",
     "problem.stat1": "hours/month recoverable in a 4-10 person office",
     "problem.stat2": "of those hours require human judgment",
     "problem.stat3": "weeks to get the first pilot running",
 
     "sectors.title": "Built for your sector, not for “businesses”",
     "sectors.legal.title": "Law firms",
-    "sectors.legal.body": "An agent that triages new cases, runs basic conflict checks, and books the first consultation — before you ever get involved.",
-    "sectors.legal.tag": "Never replaces legal advice — only intake",
+    "sectors.legal.body": "An agent that triages new cases, runs basic conflict checks, and books the first consultation, before you ever get involved.",
+    "sectors.legal.tag": "Never replaces legal advice: only intake",
     "sectors.realestate.title": "Real estate agencies",
-    "sectors.realestate.body": "Automatically qualifies leads by budget, area, and timeline, and follows up on the ones going cold — so no contact falls through the cracks.",
+    "sectors.realestate.body": "Automatically qualifies leads by budget, area, and timeline, and follows up on the ones going cold so no contact falls through the cracks.",
     "sectors.realestate.tag": "Integrated with your viewing calendar",
     "sectors.gestoria.title": "Gestorías & accounting firms",
-    "sectors.gestoria.body": "Reads incoming invoices, extracts line items, and posts them directly into your accounting software — no retyping.",
+    "sectors.gestoria.body": "Reads incoming invoices, extracts line items, and posts them directly into your accounting software. No retyping.",
     "sectors.gestoria.tag": "Kit Digital compatible",
 
     "method.title": "From diagnostic to production system",
@@ -139,18 +139,18 @@ const translations = {
     "method.s4.body": "We monitor, tune, and add improvements every month.",
 
     "why.title": "The right tool for each task, not a generic template",
-    "why.body": "We use n8n when it makes sense — for straightforward integration and data-flow automation, it's fast and reliable. But when a task needs real judgment (reading a case, deciding how to triage it, acting on it), we build a custom agent, not a generic template with the logo swapped. That's the technical difference. The other one is trust: we work with your clients' sensitive data, so GDPR compliance isn't an add-on, it's the foundation.",
+    "why.body": "We use n8n when it makes sense. It's fast and reliable for straightforward integration and data-flow work. But when a task needs real judgment (reading a case, deciding how to triage it, acting on it), we build a custom agent, not a generic template with the logo swapped. That's the technical difference. The other one is trust: we work with your clients' sensitive data, so GDPR compliance isn't an add-on, it's the foundation.",
 
     "testimonials.title": "Businesses already automating with Gradient",
     "testimonials.t1.quote": "Gradient built us a new website and a set of custom-coded agents for the business. The whole process was smooth, they understood what we needed and delivered it properly. Really happy with both the site and how the agents have taken over work we used to do manually.",
     "testimonials.t1.name": "Damodar",
-    "testimonials.t1.service": "Momentum package — website + custom agent",
+    "testimonials.t1.service": "Momentum package: website + custom agent",
     "testimonials.t2.quote": "Great work setting up automation for us with n8n. It's saved us real time on tasks we used to do by hand, and it just works, no fuss.",
     "testimonials.t2.name": "Usha Rekha",
-    "testimonials.t2.service": "Step package — n8n automation (agents-only)",
+    "testimonials.t2.service": "Step package: n8n automation (agents-only)",
     "testimonials.t3.quote": "Excellent work. The custom-built agents have been really useful day to day, and Gradient's service overall has been excellent from start to finish.",
     "testimonials.t3.name": "Deva Nag Varsheeth",
-    "testimonials.t3.service": "Momentum package — custom agent (agents-only)",
+    "testimonials.t3.service": "Momentum package: custom agent (agents-only)",
 
     "pricing.title": "Fixed prices, no surprises",
     "pricing.subtitle": "Most studios quote by the hour, after a long discovery process, with a final number nobody knows until the end. Here it's three packages, fixed price, published before you ever talk to us.",
@@ -167,7 +167,7 @@ const translations = {
     "pricing.t4.name": "Drift",
     "pricing.t4.desc": "Ongoing care after any package: monitoring, tuning, and small improvements every month.",
     "pricing.permo": "/mo",
-    "pricing.footnote": "Already have a website? Each package has a cheaper agents-only version — just ask. Eligible projects can be partially or fully funded through Spain's Kit Digital program.",
+    "pricing.footnote": "Already have a website? Each package has a cheaper agents-only version. Just ask. Eligible projects can be partially or fully funded through Spain's Kit Digital program.",
 
     "founding.title": "Limited slots while we build our portfolio",
     "founding.body": "Gradient works with a small number of firms at a time, so every project gets close, hands-on attention. The prices above are the same for everyone, no hidden discounts, no surprises, but we only open a handful of slots each quarter while we document our first case studies.",
@@ -182,7 +182,7 @@ const translations = {
     "contact.send": "Send",
     "contact.note": "This opens your email client with the message pre-written.",
 
-    "footer.tagline": "Gradient — Barcelona, Spain",
+    "footer.tagline": "Gradient · Barcelona, Spain",
     "footer.tagline2": "Where repetitive work ends",
     "footer.legal": "Independent AI automation studio. GDPR by design."
   }
