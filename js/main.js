@@ -77,6 +77,7 @@ const translations = {
     "pricing.t3.desc": "Web más 2 a 4 agentes integrados en tus herramientas actuales. Para negocios listos para automatizar de verdad.",
     "pricing.t4.name": "Drift",
     "pricing.t4.desc": "Cuidado continuo tras cualquier paquete: monitorización, ajustes y mejoras cada mes.",
+    "pricing.permo": "/mes",
     "pricing.footnote": "¿Ya tienes web? Cada paquete tiene una versión solo de agentes, más económica — pregúntanos. Los proyectos elegibles pueden financiarse total o parcialmente a través del programa Kit Digital.",
 
     "founding.title": "Plazas limitadas mientras construimos nuestro portfolio",
@@ -164,6 +165,7 @@ const translations = {
     "pricing.t3.desc": "A website plus 2 to 4 agents integrated with your existing tools. For businesses ready to automate for real.",
     "pricing.t4.name": "Drift",
     "pricing.t4.desc": "Ongoing care after any package: monitoring, tuning, and small improvements every month.",
+    "pricing.permo": "/mo",
     "pricing.footnote": "Already have a website? Each package has a cheaper agents-only version — just ask. Eligible projects can be partially or fully funded through Spain's Kit Digital program.",
 
     "founding.title": "Limited slots while we build our portfolio",
