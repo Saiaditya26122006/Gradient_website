@@ -628,3 +628,91 @@ section h2{
   .case-study-stats{ grid-template-columns:1fr; gap:20px; }
   .case-study{ padding:32px 24px; }
 }
+
+/* ---------------- LONG-FORM GUIDES ---------------- */
+.guide-meta{
+  font-size:0.85rem;
+  color:var(--ink-2);
+  margin-bottom:18px;
+}
+
+.tldr{
+  background:var(--bg-2);
+  border-left:3px solid var(--g-4);
+  border-radius:var(--radius-m);
+  padding:32px 36px;
+  margin:0 0 20px;
+}
+.tldr-kicker{
+  font-size:0.78rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--g-4);
+  font-weight:700;
+  margin-bottom:16px;
+}
+.tldr ul{ margin:0; padding-left:20px; }
+.tldr li{ color:var(--ink-0); font-size:0.98rem; line-height:1.7; margin-bottom:10px; }
+.tldr li:last-child{ margin-bottom:0; }
+
+.guide-body{ max-width:760px; }
+.guide-body p{ color:var(--ink-1); font-size:1.02rem; line-height:1.75; margin-bottom:20px; }
+.guide-body p:last-child{ margin-bottom:0; }
+.guide-body strong{ color:var(--ink-0); }
+.source-note{ font-size:0.8rem; color:var(--ink-2); font-style:italic; margin-top:-8px; }
+
+.data-table{
+  width:100%;
+  border-collapse:collapse;
+  margin:32px 0;
+  font-size:0.92rem;
+}
+.data-table th{
+  background:var(--bg-2);
+  color:var(--ink-0);
+  text-align:left;
+  padding:14px 18px;
+  font-weight:600;
+  border:1px solid var(--line-strong);
+}
+.data-table td{
+  padding:14px 18px;
+  border:1px solid var(--line);
+  color:var(--ink-1);
+  vertical-align:top;
+}
+.data-table tr:nth-child(even) td{ background:var(--bg-1); }
+
+.checklist{ list-style:none; margin:24px 0; padding:0; max-width:760px; }
+.checklist li{
+  position:relative;
+  padding-left:32px;
+  margin-bottom:14px;
+  color:var(--ink-1);
+  font-size:0.98rem;
+  line-height:1.6;
+}
+.checklist li::before{
+  content:"✓";
+  position:absolute;
+  left:0; top:0;
+  color:var(--g-4);
+  font-weight:700;
+}
+
+.guide-toc{
+  background:var(--bg-1);
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  padding:24px 28px;
+  margin:0 0 20px;
+  max-width:420px;
+}
+.guide-toc-title{ font-size:0.8rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-2); margin-bottom:12px; }
+.guide-toc ol{ margin:0; padding-left:20px; }
+.guide-toc li{ margin-bottom:8px; }
+.guide-toc a{ color:var(--ink-1); font-size:0.92rem; }
+.guide-toc a:hover{ color:var(--g-4); }
+
+.sources-list{ font-size:0.85rem; color:var(--ink-2); line-height:1.8; max-width:760px; }
+.sources-list a{ color:var(--ink-1); text-decoration:underline; }

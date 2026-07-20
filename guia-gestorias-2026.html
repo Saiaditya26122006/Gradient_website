@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatización con IA para gestorías en España en 2026: guía práctica (Verifactu, n8n y RGPD) | Gradient</title>
+<meta name="description" content="Guía 2026 para automatizar tu gestoría: coste real, Verifactu, qué automatizar y qué no, y un caso real con números. Precio fijo, sin sorpresas.">
+<link rel="canonical" href="https://gradient-website-steel.vercel.app/guia-gestorias-2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Verifactu me obliga a cambiar de agente de automatización?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Verifactu regula el software de facturación en sí (cómo se genera y reporta la factura a la AEAT), no las herramientas que leen y clasifican las facturas entrantes antes de que lleguen a ese software. Un agente de Gradient trabaja en la capa de intake: lee, extrae y categoriza, y entrega datos limpios al programa de contabilidad que ya uses. No sustituye ni certifica tu sistema de facturación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto se tarda en tener la primera factura automatizada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El primer piloto suele estar operativo en 2-3 semanas desde el diagnóstico inicial, centrado en un único flujo (por ejemplo, facturas de un proveedor habitual). Ampliar a todo el volumen de la gestoría es la fase de Build, después del piloto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si mi programa de contabilidad no tiene API?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende del programa. Herramientas como Holded exponen una API REST bien documentada, con integración rápida. Otras, como A3 Asesor, funcionan por exportación programada en los planes estándar, o vía API en los planes empresariales. Lo revisamos en el diagnóstico inicial antes de prometer un plazo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es seguro para los datos financieros de mis clientes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los datos viajan cifrados y no se almacenan más tiempo del necesario. El cumplimiento RGPD está integrado desde el diseño de cada agente, no añadido después. Ver el checklist más abajo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta exactamente automatizar mi gestoría con Gradient?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Precio fijo, publicado antes de hablar con nosotros: desde 1.500€ en pago único, más una versión solo de agentes más económica si ya tenéis web. Ver los tres paquetes completos en la página de precios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito conocimientos técnicos en el equipo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Gradient construye, conecta y entrega. El equipo de la gestoría solo revisa las excepciones que el agente marca, no configura nada."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo" aria-label="Gradient">
+      <img src="assets/logo-mark.png" alt="" class="logo-mark-img">
+      <span class="logo-text">
+        <span class="logo-word">Gradient</span>
+        <span class="logo-tagline">Donde termina el trabajo repetitivo</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html#sectores">Sectores</a>
+      <a href="gestorias.html">Gestorías</a>
+      <a href="index.html#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contacto" class="btn btn-small">Auditoría gratuita</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-visual" aria-hidden="true"><div class="mesh"></div></div>
+    <div class="wrap hero-inner">
+      <p class="breadcrumb"><a href="index.html">Inicio</a> / <a href="gestorias.html">Gestorías</a> / Guía 2026</p>
+      <p class="eyebrow">Guía 2026 &middot; Automatización para gestorías</p>
+      <h1>Automatizar tu gestoría en 2026: la guía sin rodeos</h1>
+      <p class="hero-sub">Cuánto cuesta de verdad, qué puedes automatizar ya, por qué Verifactu hace que esperar salga caro, y qué resultado ha tenido un cliente real de Gradient. Sin promesas vacías.</p>
+      <p class="guide-meta">Publicado julio 2026 &middot; 12 min de lectura</p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary">Solicita tu auditoría gratuita</a>
+        <a href="gestorias.html" class="btn btn-ghost">Ver el servicio para gestorías &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="method">
+    <div class="wrap">
+      <div class="tldr">
+        <p class="tldr-kicker">Resumen ejecutivo</p>
+        <ul>
+          <li>El nivel medio de digitalización en asesorías españolas es del <strong>43,4%</strong> — más de la mitad de los procesos siguen siendo manuales, aunque el 68% ya lo considera un eje estratégico (Sage Conecta, estudio sobre 307 despachos; Wolters Kluwer, Barómetro de la Asesoría 2026).</li>
+          <li>El procesamiento manual de facturas se lleva entre el <strong>70% y el 72%</strong> del tiempo de un contable; automatizarlo recupera hasta el <strong>80%</strong> de ese tiempo.</li>
+          <li>Verifactu se retrasa a 2027 (enero para sociedades, julio para autónomos), pero <strong>2026 es el año de auditar tu sistema</strong>: el software heredado sin soporte del fabricante se convierte en un riesgo legal real (Agencia Tributaria).</li>
+          <li>La inversión típica del mercado va de 800€ a 15.000€ según volumen e integraciones, con retorno en 4-6 meses. Gradient trabaja con <strong>precio fijo desde 1.500€</strong>, publicado antes de hablar con nosotros.</li>
+          <li>Caso real: una gestoría cliente de Gradient pasó de <strong>25+ horas semanales a 1-2 horas</strong> procesando ~1.200 facturas al mes, con cero errores en su última declaración trimestral.</li>
+        </ul>
+      </div>
+
+      <div class="guide-toc">
+        <p class="guide-toc-title">En esta guía</p>
+        <ol>
+          <li><a href="#digitalizacion">El estado de la digitalización en las gestorías españolas</a></li>
+          <li><a href="#coste-manual">El coste real de una factura tecleada a mano</a></li>
+          <li><a href="#verifactu">Verifactu: por qué 2026 sigue siendo el año de prepararse</a></li>
+          <li><a href="#que-automatizar">Qué se puede automatizar y qué no</a></li>
+          <li><a href="#como-funciona">Cómo funciona en la práctica</a></li>
+          <li><a href="#cuanto-cuesta">Cuánto cuesta automatizar una gestoría</a></li>
+          <li><a href="#caso-real">Caso real: de 25 horas a 2</a></li>
+          <li><a href="#rgpd">RGPD y datos financieros</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="digitalizacion">
+    <div class="wrap why-inner">
+      <span class="section-num">01</span>
+      <h2>El estado de la digitalización en las gestorías españolas</h2>
+      <div class="guide-body">
+        <p>El 68% de los despachos ya considera la digitalización un eje estratégico, 11 puntos más que en 2025, y el 71% de los asesores usa IA en su trabajo diario, frente al 42% del año pasado (Wolters Kluwer, Barómetro de la Asesoría 2026). Leído en positivo: el sector se está moviendo rápido.</p>
+        <p>Pero un estudio de Sage Conecta sobre 307 despachos profesionales sitúa el nivel medio real de digitalización en el <strong>43,4%</strong>. Es decir: más de la mitad de los procesos de una gestoría española media todavía se hacen a mano, a pesar de que casi siete de cada diez despachos ya saben que deberían cambiar eso.</p>
+        <p>Esa brecha entre "lo sabemos" y "lo hemos hecho" es exactamente el hueco donde encaja este documento. La adopción de ERP ha pasado del 37% al 50% en un año, el 69% ya usa software de facturación y el 59% software de nóminas — la infraestructura básica está ahí. Lo que falta, en la mayoría de los casos, es conectar esas piezas entre sí para que dejen de depender de que alguien copie datos de un sitio a otro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem" id="coste-manual">
+    <div class="wrap">
+      <span class="section-num">02</span>
+      <h2>El coste real de una factura tecleada a mano</h2>
+      <div class="guide-body">
+        <p>El procesamiento manual de facturas consume entre el <strong>70% y el 72% del tiempo</strong> de un contable en una gestoría típica. No es una cifra sorprendente si lo piensas en pasos: abrir el email o el WhatsApp, identificar proveedor e importe, comprobar el IVA, decidir la cuenta contable correcta, teclearlo todo en el programa, y repetirlo cientos de veces al mes por cada cliente.</p>
+        <p>Automatizar esa cadena recupera hasta el <strong>80% de ese tiempo</strong>, según los mismos estudios de mercado. Una asesoría de 5 a 10 personas puede liberar entre 15 y 20 horas semanales — el equivalente a un empleado a jornada completa que ya tienes, simplemente dedicado a otra cosa.</p>
+      </div>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-num">70&ndash;72%</span>
+          <span class="stat-label">del tiempo de un contable se va en procesar facturas a mano</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">80%</span>
+          <span class="stat-label">de ese tiempo se recupera automatizando el proceso</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">15&ndash;20</span>
+          <span class="stat-label">horas semanales liberadas en una asesoría de 5-10 personas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="verifactu">
+    <div class="wrap why-inner">
+      <span class="section-num">03</span>
+      <h2>Verifactu: por qué 2026 sigue siendo el año de prepararse</h2>
+      <div class="guide-body">
+        <p>Verifactu es el nuevo sistema de control de la Agencia Tributaria para garantizar que cada factura se reporta a Hacienda en el momento en que se genera, no después. El cambio de flujo es real: hoy generas la factura y la envías por email cuando te viene bien; con Verifactu, el sistema valida, genera el registro, aplica el QR y lo envía a la plataforma pública, todo en el mismo instante.</p>
+        <p>El plazo se ha retrasado a 2027 (1 de enero para sociedades sujetas a IS, 1 de julio para el resto de empresas y autónomos), pero la propia Agencia Tributaria describe 2026 como <strong>"un año de auditoría de sistemas"</strong>. La razón: muchas gestorías y sus clientes usan programas a medida o versiones antiguas de ERP sin soporte activo del fabricante, y esos sistemas heredados se convierten en un riesgo legal real en cuanto la norma entre en vigor.</p>
+        <p><strong>Dónde encaja Gradient en esto, con precisión:</strong> un agente de Gradient no sustituye ni certifica tu software de facturación — esa pieza (y su cumplimiento Verifactu) sigue siendo responsabilidad de tu programa de facturación y tu proveedor. Lo que construimos trabaja en la capa anterior: lee las facturas entrantes, las clasifica y entrega datos limpios al sistema que ya uses, sea cual sea. Preparar esa capa de intake ahora significa que, cuando llegue el momento de adaptar o cambiar el software de facturación, no estás además arreglando cómo entran los datos a mano.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem" id="que-automatizar">
+    <div class="wrap">
+      <span class="section-num">04</span>
+      <h2>Qué se puede automatizar y qué no</h2>
+      <p class="lede">No todo merece automatizarse. La regla práctica: tareas repetitivas sin criterio profesional real detrás, sí. Tareas que requieren juicio fiscal, relación con el cliente o responsabilidad legal, no.</p>
+      <table class="data-table">
+        <tr><th>Proceso</th><th>&iquest;Automatizable?</th><th>Condición</th></tr>
+        <tr><td>Recepción y lectura de facturas entrantes</td><td>Sí</td><td>Email, WhatsApp o subida directa</td></tr>
+        <tr><td>Extracción de proveedor, importe, IVA y concepto</td><td>Sí</td><td>Se marca para revisión si un dato no cuadra</td></tr>
+        <tr><td>Registro contable en tu software actual</td><td>Sí</td><td>Vía API (Holded) o exportación (A3, según plan)</td></tr>
+        <tr><td>Alertas de vencimiento y plazos</td><td>Sí</td><td>Solo acceso interno, canal cifrado</td></tr>
+        <tr><td>Conciliación bancaria básica</td><td>Sí</td><td>Requiere acceso de solo lectura a movimientos</td></tr>
+        <tr><td>Respuestas a consultas repetitivas de clientes</td><td>Sí (genérica)</td><td>Sin interpretar normativa fiscal en la respuesta</td></tr>
+        <tr><td>Interpretación fiscal de casos ambiguos</td><td>No</td><td>Reservado al asesor; responsabilidad profesional</td></tr>
+        <tr><td>Asesoramiento estratégico al cliente</td><td>No</td><td>Criterio humano irremplazable</td></tr>
+        <tr><td>Presentación final de impuestos</td><td>No (solo preparación)</td><td>Revisión y validación humana obligatoria</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="method" id="como-funciona">
+    <div class="wrap">
+      <span class="section-num">05</span>
+      <h2>Cómo funciona en la práctica</h2>
+      <div class="method-steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Recepción</h3>
+          <p>La factura llega por email, WhatsApp o se sube directamente. El agente la lee en cuanto entra, sin esperar a un lote de fin de día.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Lectura</h3>
+          <p>Extrae proveedor, importe, IVA y concepto. Sin plantillas rígidas que se rompen con el primer formato distinto al esperado.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Registro</h3>
+          <p>Contabiliza la partida en tu software actual. Holded expone una API REST bien documentada (integración en 1-2 semanas); A3 Asesor funciona por exportación programada, o vía API en planes empresariales.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">4</span>
+          <h3>Excepciones</h3>
+          <p>Si un dato no cuadra o falta información, se marca para revisión humana. El agente no inventa ni registra un dato del que no está seguro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="cuanto-cuesta">
+    <div class="wrap">
+      <span class="section-num">06</span>
+      <h2>Cuánto cuesta automatizar una gestoría</h2>
+      <p class="lede pricing-subtitle">El mercado español se mueve en rangos amplios según volumen e integraciones. Gradient trabaja distinto: precio fijo, publicado antes de hablar contigo.</p>
+      <table class="data-table">
+        <tr><th>Concepto</th><th>Rango de mercado</th></tr>
+        <tr><td>Implementación básica (OCR + integración contable)</td><td>800€ &ndash; 2.000€</td></tr>
+        <tr><td>Sistema completo (validación, conciliación, reporting)</td><td>3.000€ &ndash; 5.000€</td></tr>
+        <tr><td>Proyecto de mayor volumen o integraciones múltiples</td><td>6.000€ &ndash; 15.000€</td></tr>
+        <tr><td>Coste operativo mensual (plataforma + APIs)</td><td>50€ &ndash; 500€/mes</td></tr>
+        <tr><td>Payback típico observado en el mercado</td><td>4&ndash;6 meses</td></tr>
+      </table>
+      <p class="source-note">Fuentes: análisis de proyectos de automatización back-office en asesorías españolas, 2026 (ver fuentes al final).</p>
+      <p class="lede pricing-subtitle" style="margin-top:32px;">Dentro de esos rangos, así es como lo estructura Gradient: tres paquetes de pago único (desde 1.500€ hasta 5.000€, según cuántos flujos cubras) más un cuidado mensual opcional de 400€. Nada de eso depende de ninguna subvención — recuperando las horas que ya hemos visto en esta guía, el paquete intermedio suele amortizarse en el primer trimestre de uso.</p>
+      <a href="index.html#precios" class="btn btn-ghost">Ver los tres paquetes y el precio exacto &rarr;</a>
+    </div>
+  </section>
+
+  <section class="testimonials" id="caso-real">
+    <div class="wrap">
+      <span class="section-num">07</span>
+      <h2>Caso real: de 25 horas a 2</h2>
+      <div class="case-study">
+        <p class="case-study-kicker">Gestoría &middot; Paquete Step</p>
+        <h3>Cómo Usha Rekha llegó tranquila a la campaña de impuestos</h3>
+        <p class="case-study-quote">Nos salvó en la última campaña de impuestos, sin ningún estrés. Antes le dedicábamos más de 25 horas a la semana solo a meter facturas y clasificar recibos.</p>
+        <div class="case-study-stats">
+          <div class="case-study-stat"><strong>25+h &rarr; 1&ndash;2h</strong><span>por semana dedicadas a facturas y recibos</span></div>
+          <div class="case-study-stat"><strong>~1.200</strong><span>facturas y recibos procesados al mes</span></div>
+          <div class="case-study-stat"><strong>8 meses</strong><span>en producción, cero errores en la declaración trimestral</span></div>
+        </div>
+        <p class="case-study-name">&mdash; Usha Rekha, Paquete Step: automatización con n8n (solo agentes)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="rgpd">
+    <div class="wrap why-inner">
+      <span class="section-num">08</span>
+      <h2>RGPD y datos financieros</h2>
+      <p class="lede">Los datos financieros de tus clientes son datos sensibles. Esto es lo mínimo que cualquier automatización debería cumplir desde el diseño, no como trámite posterior:</p>
+      <ul class="checklist">
+        <li>Servidores en la UE (o cláusulas contractuales tipo si hay transferencia internacional).</li>
+        <li>Contrato de encargado de tratamiento (DPA) firmado con cada proveedor de software o cloud implicado.</li>
+        <li>Cifrado en tránsito y en reposo para cualquier dato que pase por el agente.</li>
+        <li>Control de accesos por rol: no todo el equipo necesita ver todos los expedientes de todos los clientes.</li>
+        <li>Registro de Actividades de Tratamiento actualizado en cuanto se incorpora un nuevo sistema automatizado.</li>
+        <li>Retención de datos limitada al tiempo necesario, no indefinida por defecto.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="testimonials" id="faq">
+    <div class="wrap">
+      <span class="section-num">09</span>
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>¿Verifactu me obliga a cambiar de agente de automatización?</h3>
+          <p>No. Verifactu regula el software de facturación en sí (cómo se genera y reporta la factura a la AEAT), no las herramientas que leen y clasifican las facturas entrantes antes de que lleguen a ese software. Un agente de Gradient trabaja en la capa de intake: lee, extrae y categoriza, y entrega datos limpios al programa de contabilidad que ya uses. No sustituye ni certifica tu sistema de facturación.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cuánto se tarda en tener la primera factura automatizada?</h3>
+          <p>El primer piloto suele estar operativo en 2-3 semanas desde el diagnóstico inicial, centrado en un único flujo (por ejemplo, facturas de un proveedor habitual). Ampliar a todo el volumen de la gestoría es la fase de Build, después del piloto.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Qué pasa si mi programa de contabilidad no tiene API?</h3>
+          <p>Depende del programa. Herramientas como Holded exponen una API REST bien documentada, con integración rápida. Otras, como A3 Asesor, funcionan por exportación programada en los planes estándar, o vía API en los planes empresariales. Lo revisamos en el diagnóstico inicial antes de prometer un plazo.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Es seguro para los datos financieros de mis clientes?</h3>
+          <p>Los datos viajan cifrados y no se almacenan más tiempo del necesario. El cumplimiento RGPD está integrado desde el diseño de cada agente, no añadido después. Ver el checklist más abajo.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cuánto cuesta exactamente automatizar mi gestoría con Gradient?</h3>
+          <p>Precio fijo, publicado antes de hablar con nosotros: desde 1.500€ en pago único, más una versión solo de agentes más económica si ya tenéis web. Ver los tres paquetes completos en la página de precios.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Necesito conocimientos técnicos en el equipo?</h3>
+          <p>No. Gradient construye, conecta y entrega. El equipo de la gestoría solo revisa las excepciones que el agente marca, no configura nada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap why-inner">
+      <h2>Fuentes</h2>
+      <p class="sources-list">
+        Wolters Kluwer, <em>Barómetro de la Asesoría 2026</em> &middot;
+        Sage Conecta, estudio de digitalización sobre 307 despachos profesionales, 2026 &middot;
+        Agencia Tributaria, notas informativas sobre el sistema VeriFactu y ampliación de plazos &middot;
+        análisis de mercado sobre automatización back-office en asesorías españolas con n8n, Holded y A3, 2026.
+      </p>
+    </div>
+  </section>
+
+  <section class="founding">
+    <div class="wrap founding-inner">
+      <h2>¿Tu gestoría pierde horas en tareas que ya no deberían ser manuales?</h2>
+      <p>Cuéntanos cuántas facturas gestionáis al mes y por qué canal llegan. En 24 horas te decimos si tiene sentido automatizarlo, con el mismo precio fijo para todos.</p>
+      <a href="#contacto" class="btn btn-primary">Solicita tu auditoría gratuita</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap contact-inner">
+      <span class="section-num">10</span>
+      <h2>Hablemos de tu gestoría</h2>
+      <p class="lede">Cuéntanos cuántas facturas gestionáis al mes y por qué canal llegan. En 24 horas te decimos si tiene sentido automatizarlo.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="company">Empresa</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-row">
+          <label for="message">¿Qué tarea os quita más tiempo?</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <p class="form-note">Se abrirá tu cliente de correo con el mensaje ya redactado.</p>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p style="color:var(--ink-2);font-size:0.9rem;margin-bottom:8px;">Sigue leyendo</p>
+      <div class="related-sectors">
+        <a href="gestorias.html">Automatización para gestorías (servicio)</a>
+        <a href="bufetes.html">Bufetes de abogados</a>
+        <a href="inmobiliarias.html">Inmobiliarias</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-mark.png" alt="" class="logo-mark-img small">
+      <span>Gradient · Barcelona, España</span>
+    </div>
+    <p class="footer-tagline2">Donde termina el trabajo repetitivo</p>
+    <p class="footer-legal">Estudio independiente de automatización con IA. RGPD por diseño.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
