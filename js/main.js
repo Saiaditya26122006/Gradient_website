@@ -3,10 +3,9 @@
    ======================================================== */
 
 // -------- 1. TRANSLATIONS --------
-// NOTE: business email below is a placeholder (founder's personal inbox).
-// Dedicated Gradient inbox (gradient2607@gmail.com). Swap again for a proper
-// @domain address (with forwarding into this inbox, or full Workspace hosting)
-// once the domain is live -- see business plan / conversation notes.
+// Dedicated Gradient inbox (gradient2607@gmail.com), not the founder's personal
+// address. Swap again for a proper @domain address (with forwarding into this
+// inbox, or full Workspace hosting) once the domain is live.
 const CONTACT_EMAIL = "gradient2607@gmail.com";
 
 const translations = {
