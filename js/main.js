@@ -37,7 +37,7 @@ const translations = {
     "sectors.realestate.tag": "Integrado con tu calendario de visitas",
     "sectors.gestoria.title": "Gestorías y asesorías",
     "sectors.gestoria.body": "Lee facturas entrantes, extrae las partidas y las registra en tu software de contabilidad, sin retipear nada.",
-    "sectors.gestoria.tag": "Compatible con Kit Digital",
+    "sectors.gestoria.tag": "Sin retipear nunca más una factura",
 
     "method.title": "De diagnóstico a sistema en producción",
     "method.s1.title": "Diagnóstico",
@@ -78,7 +78,7 @@ const translations = {
     "pricing.t4.name": "Drift",
     "pricing.t4.desc": "Cuidado continuo tras cualquier paquete: monitorización, ajustes y mejoras cada mes.",
     "pricing.permo": "/mes",
-    "pricing.footnote": "¿Ya tienes web? Cada paquete tiene una versión solo de agentes, más económica. Pregúntanos. Los proyectos elegibles pueden financiarse total o parcialmente a través del programa Kit Digital.",
+    "pricing.footnote": "¿Ya tienes web? Cada paquete tiene una versión solo de agentes, más económica. Pregúntanos. Recuperando esas 20-40 horas al mes, la mayoría de los negocios amortiza Momentum en su primer trimestre de uso, sin depender de ninguna subvención.",
 
     "founding.title": "Plazas limitadas mientras construimos nuestro portfolio",
     "founding.body": "Gradient trabaja con un número reducido de despachos a la vez para dar seguimiento cercano a cada proyecto. Los precios de arriba son los mismos para todos: sin descuentos ocultos, sin sorpresas. Pero solo abrimos un puñado de plazas cada trimestre mientras documentamos nuestros primeros casos de estudio.",
@@ -126,7 +126,7 @@ const translations = {
     "sectors.realestate.tag": "Integrated with your viewing calendar",
     "sectors.gestoria.title": "Gestorías & accounting firms",
     "sectors.gestoria.body": "Reads incoming invoices, extracts line items, and posts them directly into your accounting software. No retyping.",
-    "sectors.gestoria.tag": "Kit Digital compatible",
+    "sectors.gestoria.tag": "Never retype an invoice again",
 
     "method.title": "From diagnostic to production system",
     "method.s1.title": "Diagnostic",
@@ -167,7 +167,7 @@ const translations = {
     "pricing.t4.name": "Drift",
     "pricing.t4.desc": "Ongoing care after any package: monitoring, tuning, and small improvements every month.",
     "pricing.permo": "/mo",
-    "pricing.footnote": "Already have a website? Each package has a cheaper agents-only version. Just ask. Eligible projects can be partially or fully funded through Spain's Kit Digital program.",
+    "pricing.footnote": "Already have a website? Each package has a cheaper agents-only version. Just ask. Recovering those same 20-40 hours a month, most businesses pay back Momentum within their first quarter of use, no subsidy required.",
 
     "founding.title": "Limited slots while we build our portfolio",
     "founding.body": "Gradient works with a small number of firms at a time, so every project gets close, hands-on attention. The prices above are the same for everyone, no hidden discounts, no surprises, but we only open a handful of slots each quarter while we document our first case studies.",
