@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatización con IA para bufetes de abogados en Barcelona | Gradient</title>
+<meta name="description" content="Un agente que hace el triaje de nuevos casos, comprueba conflictos de interés básicos y agenda la primera consulta. Nunca sustituye el consejo legal. Precio fijo.">
+<link rel="canonical" href="https://gradient-website-steel.vercel.app/bufetes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿El agente da consejo legal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, nunca. Solo hace el triaje inicial: cualifica, estructura la información y agenda la consulta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se protege el secreto profesional y el RGPD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los datos viajan cifrados y los mensajes al cliente son deliberadamente genéricos, sin revelar contenido jurídico sustantivo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tarda en estar funcionando?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El primer piloto suele estar operativo en 2-3 semanas desde el diagnóstico inicial."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo" aria-label="Gradient">
+      <img src="assets/logo-mark.png" alt="" class="logo-mark-img">
+      <span class="logo-text">
+        <span class="logo-word">Gradient</span>
+        <span class="logo-tagline">Donde termina el trabajo repetitivo</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html#sectores">Sectores</a>
+      <a href="index.html#como">Cómo funciona</a>
+      <a href="index.html#testimonios">Testimonios</a>
+      <a href="index.html#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#contacto" class="btn btn-small">Auditoría gratuita</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-visual" aria-hidden="true">
+      <div class="mesh"></div>
+    </div>
+    <div class="wrap hero-inner">
+      <p class="breadcrumb"><a href="index.html">Inicio</a> / Bufetes de abogados</p>
+      <p class="eyebrow">Automatización para bufetes de abogados</p>
+      <h1>El triaje de un caso nuevo, resuelto antes de que llegue a tu mesa.</h1>
+      <p class="hero-sub">Gradient construye un agente que recibe la primera consulta de un cliente potencial, hace las preguntas de cualificación según el tipo de asunto, comprueba conflictos de interés básicos y agenda la cita, para que tú solo intervengas cuando el caso ya está listo para tu criterio.</p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary">Solicita tu auditoría gratuita</a>
+        <a href="index.html#precios" class="btn btn-ghost">Ver precios &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="wrap">
+      <span class="section-num">01</span>
+      <h2>La primera llamada se lleva el tiempo que no factura</h2>
+      <p class="lede">Una consulta inicial mal cualificada puede costar 30-45 minutos que luego no prosperan en un caso real. Multiplicado por cada consulta entrante, es tiempo que no se factura y que compite directamente con el trabajo jurídico que sí lo hace. A eso se suman los plazos procesales perseguidos en una agenda compartida y las mismas preguntas de estado repetidas por email cada semana.</p>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-num">20&ndash;40</span>
+          <span class="stat-label">horas/mes recuperables en una oficina de 4-10 personas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">de esas horas requiere criterio humano</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2&ndash;3</span>
+          <span class="stat-label">semanas para tener el primer piloto funcionando</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="method">
+    <div class="wrap">
+      <span class="section-num">02</span>
+      <h2>Cómo funciona para tu bufete</h2>
+      <div class="method-steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Primer contacto</h3>
+          <p>El cliente potencial escribe por WhatsApp o rellena el formulario web. El agente identifica el tipo de asunto.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Cualificación</h3>
+          <p>Hace las preguntas relevantes según el área: laboral, civil, mercantil, familia, según cómo defináis el proceso.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Ficha estructurada</h3>
+          <p>Compila las respuestas y envía una ficha con los datos clave al abogado responsable, con prioridad indicada.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">4</span>
+          <h3>Cita agendada</h3>
+          <p>Confirma al cliente el siguiente paso y agenda la primera consulta directamente en el calendario del despacho.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap why-inner">
+      <span class="section-num">03</span>
+      <h2>Nunca sustituye el consejo legal: solo la admisión</h2>
+      <p class="lede">El agente hace triaje, no asesoramiento. Cualifica, estructura y agenda; el criterio jurídico y la responsabilidad colegial siguen siendo enteramente tuyas. Trabajamos con datos sensibles y protegidos por el secreto profesional, así que el cifrado y el cumplimiento RGPD están integrados desde el diseño, no añadidos después.</p>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <div class="wrap">
+      <span class="section-num">04</span>
+      <h2>Precio fijo, sin sorpresas</h2>
+      <p class="lede pricing-subtitle">Muchos bufetes empiezan con el paquete Momentum: web más un agente a medida centrado en el triaje de nuevos casos. Si ya tenéis web, hay una versión solo de agentes más económica.</p>
+      <a href="index.html#precios" class="btn btn-ghost">Ver los tres paquetes y el precio exacto &rarr;</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="wrap">
+      <span class="section-num">05</span>
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>¿El agente da consejo legal?</h3>
+          <p>No, nunca. Solo hace el triaje inicial: cualifica, estructura la información y agenda la consulta.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cómo se protege el secreto profesional y el RGPD?</h3>
+          <p>Los datos viajan cifrados y los mensajes al cliente son deliberadamente genéricos, sin revelar contenido jurídico sustantivo.</p>
+        </div>
+        <div class="faq-item">
+          <h3>¿Cuánto tarda en estar funcionando?</h3>
+          <p>El primer piloto suele estar operativo en 2-3 semanas desde el diagnóstico inicial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="founding">
+    <div class="wrap founding-inner">
+      <h2>Plazas limitadas mientras construimos nuestro portfolio</h2>
+      <p>Gradient trabaja con un número reducido de despachos a la vez para dar seguimiento cercano a cada proyecto. Los precios son los mismos para todos: sin descuentos ocultos, sin sorpresas.</p>
+      <a href="#contacto" class="btn btn-primary">Reserva tu plaza</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap contact-inner">
+      <span class="section-num">06</span>
+      <h2>Hablemos de tu despacho</h2>
+      <p class="lede">Cuéntanos qué parte del proceso de admisión os quita más tiempo cada semana. En 24 horas te decimos si tiene sentido automatizarla.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="company">Empresa</label>
+          <input type="text" id="company" name="company">
+        </div>
+        <div class="form-row">
+          <label for="message">¿Qué tarea os quita más tiempo?</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <p class="form-note">Se abrirá tu cliente de correo con el mensaje ya redactado.</p>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p style="color:var(--ink-2);font-size:0.9rem;margin-bottom:8px;">Otros sectores</p>
+      <div class="related-sectors">
+        <a href="gestorias.html">Gestorías y asesorías</a>
+        <a href="inmobiliarias.html">Inmobiliarias</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-mark.png" alt="" class="logo-mark-img small">
+      <span>Gradient · Barcelona, España</span>
+    </div>
+    <p class="footer-tagline2">Donde termina el trabajo repetitivo</p>
+    <p class="footer-legal">Estudio independiente de automatización con IA. RGPD por diseño.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

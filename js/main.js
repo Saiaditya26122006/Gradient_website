@@ -39,6 +39,9 @@ const translations = {
     "sectors.gestoria.title": "Gestorías y asesorías",
     "sectors.gestoria.body": "Lee facturas entrantes, extrae las partidas y las registra en tu software de contabilidad, sin retipear nada.",
     "sectors.gestoria.tag": "Sin retipear nunca más una factura",
+    "sectors.legal.more": "Saber más →",
+    "sectors.realestate.more": "Saber más →",
+    "sectors.gestoria.more": "Saber más →",
 
     "method.title": "De diagnóstico a sistema en producción",
     "method.s1.title": "Diagnóstico",
@@ -128,6 +131,9 @@ const translations = {
     "sectors.gestoria.title": "Gestorías & accounting firms",
     "sectors.gestoria.body": "Reads incoming invoices, extracts line items, and posts them directly into your accounting software. No retyping.",
     "sectors.gestoria.tag": "Never retype an invoice again",
+    "sectors.legal.more": "Learn more →",
+    "sectors.realestate.more": "Learn more →",
+    "sectors.gestoria.more": "Learn more →",
 
     "method.title": "From diagnostic to production system",
     "method.s1.title": "Diagnostic",
@@ -204,10 +210,14 @@ function setLanguage(lang){
   localStorage.setItem("gradient_lang", lang);
 }
 
-document.getElementById("langToggle").addEventListener("click", () => {
-  const current = document.documentElement.lang === "en" ? "en" : "es";
-  setLanguage(current === "es" ? "en" : "es");
-});
+// Guarded: not every page has a language toggle (e.g. Spanish-only sector pages).
+const langToggleEl = document.getElementById("langToggle");
+if (langToggleEl) {
+  langToggleEl.addEventListener("click", () => {
+    const current = document.documentElement.lang === "en" ? "en" : "es";
+    setLanguage(current === "es" ? "en" : "es");
+  });
+}
 
 // restore saved preference on load
 const savedLang = localStorage.getItem("gradient_lang");
@@ -217,16 +227,20 @@ if (savedLang === "en") setLanguage("en");
 // No backend yet, so this opens the visitor's email client with a pre-filled message.
 // Replace with a real form handler (e.g. a Vercel serverless function) once the
 // business has a dedicated inbox and wants a no-redirect submit experience.
-document.getElementById("contactForm").addEventListener("submit", function(e){
-  e.preventDefault();
-  const name = this.name.value;
-  const email = this.email.value;
-  const company = this.company.value;
-  const message = this.message.value;
-  const subject = encodeURIComponent(`Consulta de ${name}${company ? " (" + company + ")" : ""}`);
-  const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\nEmpresa: ${company}\n\n${message}`);
-  window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-});
+// Guarded: same reasoning as the language toggle above.
+const contactFormEl = document.getElementById("contactForm");
+if (contactFormEl) {
+  contactFormEl.addEventListener("submit", function(e){
+    e.preventDefault();
+    const name = this.name.value;
+    const email = this.email.value;
+    const company = this.company.value;
+    const message = this.message.value;
+    const subject = encodeURIComponent(`Consulta de ${name}${company ? " (" + company + ")" : ""}`);
+    const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\nEmpresa: ${company}\n\n${message}`);
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+  });
+}
 
 // -------- 4. SCROLL REVEAL --------
 const revealTargets = document.querySelectorAll("section h2, .sector-card, .price-card, .step, .stat, .testimonial-card");
