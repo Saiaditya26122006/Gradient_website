@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo tratamos los datos de tus clientes · Gradient</title>
+<meta name="description" content="Dónde se procesan los documentos, en qué región, cuánto se conservan, cómo se borran, qué se registra y cuándo interviene una persona.">
+<meta name="robots" content="index, follow">
+<!-- TODO: replace {{SITE_URL}} with the production domain once it is live -->
+<link rel="canonical" href="{{SITE_URL}}/datos.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gradient">
+<meta property="og:title" content="Cómo tratamos los datos de tus clientes · Gradient">
+<meta property="og:description" content="Dónde, cuánto tiempo y con qué garantías tratamos los documentos que nos entregas.">
+<meta property="og:url" content="{{SITE_URL}}/datos.html">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="{{SITE_URL}}/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#top">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="/" class="logo" aria-label="Gradient, inicio">
+      <img src="assets/logo-mark.png" alt="" class="logo-mark-img">
+      <span class="logo-text">
+        <span class="logo-word">Gradient</span>
+        <span class="logo-tagline" data-i18n="footer.tagline2">Donde termina el trabajo repetitivo</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="Principal">
+      <a href="/#sectores" data-i18n="nav.sectors">Sectores</a>
+      <a href="/#como" data-i18n="nav.how">Cómo funciona</a>
+      <a href="/#proof" data-i18n="nav.proof">Cómo trabajamos</a>
+      <a href="/#precios" data-i18n="nav.pricing">Precios</a>
+      <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
+        <span class="lang-opt is-active" data-lang-opt="es">ES</span>
+        <span class="lang-divider" aria-hidden="true">/</span>
+        <span class="lang-opt" data-lang-opt="en">EN</span>
+      </button>
+      <a href="/#contacto" class="btn btn-small" data-booking data-i18n="nav.cta">Auditoría gratuita</a>
+    </div>
+  </div>
+</header>
+
+<main id="top" class="page">
+  <div class="wrap page-inner">
+
+    <p class="eyebrow">Confianza</p>
+    <h1>Cómo tratamos los documentos de tus clientes</h1>
+    <p class="updated">Última actualización: <!-- TODO: fecha de publicación efectiva --> {{FECHA_ACTUALIZACION}}</p>
+
+    <p>Esta página está escrita pensando en una gestoría, un bufete o una inmobiliaria que se está planteando pasarnos documentos reales (facturas, contratos, expedientes) para que un agente los procese. Aquí explicamos, en cristiano, qué pasa con esos documentos.</p>
+
+    <h2>Dónde se procesan</h2>
+    <p>Los documentos que nos entregas se procesan en la infraestructura de <strong>{{PROVEEDOR}}</strong>, que es nuestro proveedor de cómputo y de modelos de IA. No mantenemos copias en ordenadores personales, en dispositivos USB ni en cuentas personales de servicios de terceros.</p>
+    <div class="todo-note">TODO: sustituye {{PROVEEDOR}} por el proveedor real (por ejemplo, el proveedor de LLM que uses y/o el proveedor de la infraestructura donde corre el agente).</div>
+
+    <h2>En qué región</h2>
+    <p>Priorizamos siempre que el procesamiento ocurra en <strong>{{REGION}}</strong>, dentro del Espacio Económico Europeo. Cuando por razones técnicas puntuales fuera imprescindible tratar los datos fuera del EEE, lo hacemos únicamente con proveedores que ofrecen garantías reconocidas por el RGPD (decisión de adecuación, cláusulas contractuales tipo o mecanismos equivalentes), y te lo comunicamos por adelantado.</p>
+    <div class="todo-note">TODO: sustituye {{REGION}} por la región real (por ejemplo, «UE (Frankfurt)», «UE (Irlanda)», etc.).</div>
+
+    <h2>Cuánto tiempo se conservan</h2>
+    <p>Durante la fase activa del proyecto, mantenemos los documentos el tiempo estrictamente necesario para procesarlos y validar el resultado. Como criterio general:</p>
+    <ul>
+      <li>Los documentos <strong>en tránsito</strong> a través del agente se procesan y se descartan de la memoria de trabajo en cuanto la tarea termina.</li>
+      <li>Las copias necesarias para <strong>revisión y auditoría</strong> se conservan un máximo de <strong>30 días</strong> desde el procesamiento, salvo que acordemos otra cosa por escrito contigo.</li>
+      <li>Al terminar el proyecto, o cuando lo solicites, se eliminan los datos, salvo la información contable/legal que estemos obligados a conservar por ley.</li>
+    </ul>
+
+    <h2>Cómo se borran</h2>
+    <p>Puedes pedir la eliminación de los datos en cualquier momento escribiendo a {{EMAIL_CONTACTO}}. Al recibir la solicitud:</p>
+    <ol>
+      <li>Confirmamos por escrito que la hemos recibido.</li>
+      <li>Eliminamos los documentos de los sistemas activos.</li>
+      <li>Solicitamos a los encargados de tratamiento la eliminación de las copias que puedan tener bajo su control, dentro de los plazos técnicos previstos en sus DPAs.</li>
+      <li>Te confirmamos por escrito cuando el proceso ha concluido.</li>
+    </ol>
+    <p>Las copias de seguridad rotativas pueden mantener los datos durante un plazo adicional acotado (típicamente hasta 30 días) antes de ser sobrescritas.</p>
+
+    <h2>Qué se registra (logs)</h2>
+    <p>Para poder darte trazabilidad y depurar el sistema, registramos:</p>
+    <ul>
+      <li>Fecha y hora de cada ejecución del agente.</li>
+      <li>Identificador del documento o del expediente procesado (no su contenido íntegro).</li>
+      <li>El resultado devuelto por el agente y, cuando aplica, la puntuación de confianza.</li>
+      <li>Errores y avisos que se hayan producido durante la ejecución.</li>
+    </ul>
+    <p>Los logs son de acceso restringido, se conservan como máximo el tiempo indicado en la sección anterior y no se comparten con terceros ajenos a la prestación del servicio.</p>
+
+    <h2>Revisión humana en extracciones de baja confianza</h2>
+    <p>Cuando el agente extrae información de un documento (por ejemplo, campos de una factura), calcula una puntuación de confianza en cada campo. Si esa puntuación cae por debajo del umbral acordado contigo, el resultado <strong>no se aplica automáticamente</strong> en tu sistema: se marca para revisión y una persona lo valida antes de escribirlo. El umbral y quién realiza la revisión se fijan al inicio del proyecto.</p>
+
+    <h2>¿Preguntas?</h2>
+    <p>Si echas algo en falta o quieres que te firmemos un acuerdo de encargo del tratamiento (DPA) específico con tu despacho, escribe a <strong>{{EMAIL_CONTACTO}}</strong>. Este documento se actualizará cuando cambien los proveedores o los plazos.</p>
+
+    <p>Ver también: <a href="/privacidad.html">Política de privacidad</a> · <a href="/aviso-legal.html">Aviso legal</a>.</p>
+
+    <p><a href="/">← Volver al inicio</a></p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo-mark.png" alt="" class="logo-mark-img small">
+      <span data-i18n="footer.tagline">Gradient · Barcelona, España</span>
+    </div>
+    <p class="footer-tagline2" data-i18n="footer.tagline2">Donde termina el trabajo repetitivo</p>
+    <p class="footer-legal" data-i18n="footer.legal">Estudio independiente de automatización con IA. RGPD por diseño.</p>
+    <nav class="footer-legal-links" aria-label="Enlaces legales">
+      <a href="/aviso-legal.html" data-i18n="footer.link.legal">Aviso legal</a>
+      <a href="/privacidad.html" data-i18n="footer.link.privacy">Privacidad</a>
+      <a href="/cookies.html" data-i18n="footer.link.cookies">Cookies</a>
+      <a href="/datos.html" data-i18n="footer.link.data">Datos de clientes</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

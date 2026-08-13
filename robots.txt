@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: replace {{SITE_URL}} with the production domain (e.g. https://gradient.studio)
+Sitemap: {{SITE_URL}}/sitemap.xml

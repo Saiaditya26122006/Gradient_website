@@ -3,36 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gradient — Automatización inteligente para negocios profesionales</title>
-<meta name="description" content="Gradient diseña webs y agentes de IA a medida para bufetes, inmobiliarias y gestorías en Barcelona.">
+<title>Gradient · Automatización con IA para despachos profesionales en Barcelona</title>
+<meta name="description" content="Gradient diseña webs y agentes de IA a medida para bufetes, inmobiliarias y gestorías en Barcelona. Precio fijo, RGPD por diseño.">
+<!-- TODO: replace {{SITE_URL}} with the production domain once it is live -->
+<link rel="canonical" href="{{SITE_URL}}/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gradient">
+<meta property="og:title" content="Gradient · Automatización con IA para despachos profesionales">
+<meta property="og:description" content="Webs y agentes de IA a medida para bufetes, inmobiliarias y gestorías en Barcelona. Precio fijo, RGPD por diseño.">
+<meta property="og:url" content="{{SITE_URL}}/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="{{SITE_URL}}/assets/icon-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gradient · Automatización con IA para despachos profesionales">
+<meta name="twitter:description" content="Webs y agentes de IA a medida para bufetes, inmobiliarias y gestorías en Barcelona.">
+<meta name="twitter:image" content="{{SITE_URL}}/assets/icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
 </head>
 <body>
 
-<div class="grain"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#top">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="#top" class="logo" aria-label="Gradient">
-      <span class="logo-mark">G</span>
-      <span class="logo-word">Gradient</span>
+    <a href="#top" class="logo" aria-label="Gradient, inicio">
+      <img src="assets/logo-mark.png" alt="" class="logo-mark-img">
+      <span class="logo-text">
+        <span class="logo-word">Gradient</span>
+        <span class="logo-tagline" data-i18n="footer.tagline2">Donde termina el trabajo repetitivo</span>
+      </span>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Principal">
       <a href="#sectores" data-i18n="nav.sectors">Sectores</a>
       <a href="#como" data-i18n="nav.how">Cómo funciona</a>
+      <a href="#proof" data-i18n="nav.proof">Cómo trabajamos</a>
       <a href="#precios" data-i18n="nav.pricing">Precios</a>
       <a href="#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <div class="header-actions">
-      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">
         <span class="lang-opt is-active" data-lang-opt="es">ES</span>
-        <span class="lang-divider">/</span>
+        <span class="lang-divider" aria-hidden="true">/</span>
         <span class="lang-opt" data-lang-opt="en">EN</span>
       </button>
-      <a href="#contacto" class="btn btn-small" data-i18n="nav.cta">Auditoría gratuita</a>
+      <a href="#contacto" class="btn btn-small" data-booking data-i18n="nav.cta">Auditoría gratuita</a>
     </div>
   </div>
 </header>
@@ -49,7 +72,7 @@
       <h1 data-i18n="hero.title">Convertimos el trabajo repetitivo en sistemas que trabajan por ti.</h1>
       <p class="hero-sub" data-i18n="hero.sub">Gradient diseña webs y agentes de IA a medida para bufetes, inmobiliarias y gestorías en Barcelona. Menos horas perdidas en tareas manuales, más tiempo para lo que realmente importa.</p>
       <div class="hero-ctas">
-        <a href="#contacto" class="btn btn-primary" data-i18n="hero.cta1">Solicita tu auditoría gratuita</a>
+        <a href="#contacto" class="btn btn-primary" data-booking data-i18n="hero.cta1">Solicita tu auditoría gratuita</a>
         <a href="#como" class="btn btn-ghost" data-i18n="hero.cta2">Ver cómo funciona ↓</a>
       </div>
     </div>
@@ -58,9 +81,9 @@
   <!-- PROBLEM -->
   <section class="problem">
     <div class="wrap">
-      <span class="section-num">01</span>
+      <span class="section-num" aria-hidden="true">01</span>
       <h2 data-i18n="problem.title">El mismo problema, todos los días</h2>
-      <p class="lede" data-i18n="problem.body">Facturas que se transcriben a mano. Documentos que se clasifican uno a uno. Clientes que preguntan lo mismo por email cada semana. Plazos que se persiguen en una hoja de cálculo. Son tareas que consumen entre 20 y 40 horas al mes en un despacho de 4 a 10 personas — y ninguna de ellas requiere criterio humano.</p>
+      <p class="lede" data-i18n="problem.body">Facturas que se transcriben a mano. Documentos que se clasifican uno a uno. Clientes que preguntan lo mismo por email cada semana. Plazos que se persiguen en una hoja de cálculo. Son tareas que consumen entre 20 y 40 horas al mes en un despacho de 4 a 10 personas, y ninguna de ellas requiere criterio humano.</p>
       <div class="stat-row">
         <div class="stat">
           <span class="stat-num">20&ndash;40</span>
@@ -81,26 +104,26 @@
   <!-- SECTORS -->
   <section class="sectors" id="sectores">
     <div class="wrap">
-      <span class="section-num">02</span>
+      <span class="section-num" aria-hidden="true">02</span>
       <h2 data-i18n="sectors.title">Construido para tu sector, no para "empresas"</h2>
       <div class="sector-grid">
         <article class="sector-card">
           <span class="sector-icon" aria-hidden="true">&#9878;</span>
           <h3 data-i18n="sectors.legal.title">Bufetes de abogados</h3>
-          <p data-i18n="sectors.legal.body">Un agente que hace el triaje de nuevos casos, comprueba conflictos de interés básicos y agenda la primera consulta — antes de que tú intervengas.</p>
-          <span class="sector-tag" data-i18n="sectors.legal.tag">Nunca sustituye el consejo legal — solo la admisión</span>
+          <p data-i18n="sectors.legal.body">Un agente que hace el triaje de nuevos casos, comprueba conflictos de interés básicos y agenda la primera consulta, antes de que tú intervengas.</p>
+          <span class="sector-tag" data-i18n="sectors.legal.tag">Nunca sustituye el consejo legal: solo la admisión</span>
         </article>
         <article class="sector-card">
           <span class="sector-icon" aria-hidden="true">&#9737;</span>
           <h3 data-i18n="sectors.realestate.title">Inmobiliarias</h3>
-          <p data-i18n="sectors.realestate.body">Cualifica leads automáticamente por presupuesto, zona y plazos, y hace seguimiento de los que se enfrían — para que no se pierda ni un contacto.</p>
+          <p data-i18n="sectors.realestate.body">Cualifica leads automáticamente por presupuesto, zona y plazos, y hace seguimiento de los que se enfrían para que no se pierda ni un contacto.</p>
           <span class="sector-tag" data-i18n="sectors.realestate.tag">Integrado con tu calendario de visitas</span>
         </article>
         <article class="sector-card">
           <span class="sector-icon" aria-hidden="true">&#9878;&#65039;</span>
           <h3 data-i18n="sectors.gestoria.title">Gestorías y asesorías</h3>
-          <p data-i18n="sectors.gestoria.body">Lee facturas entrantes, extrae las partidas y las registra en tu software de contabilidad — sin retipear nada.</p>
-          <span class="sector-tag" data-i18n="sectors.gestoria.tag">Compatible con Kit Digital</span>
+          <p data-i18n="sectors.gestoria.body">Lee facturas entrantes, extrae las partidas y las registra en tu software de contabilidad, sin retipear nada.</p>
+          <span class="sector-tag" data-i18n="sectors.gestoria.tag">Sin retipear nunca más una factura</span>
         </article>
       </div>
     </div>
@@ -109,26 +132,26 @@
   <!-- METHODOLOGY -->
   <section class="method" id="como">
     <div class="wrap">
-      <span class="section-num">03</span>
+      <span class="section-num" aria-hidden="true">03</span>
       <h2 data-i18n="method.title">De diagnóstico a sistema en producción</h2>
       <div class="method-steps">
         <div class="step">
-          <span class="step-num">1</span>
+          <span class="step-num" aria-hidden="true">1</span>
           <h3 data-i18n="method.s1.title">Diagnóstico</h3>
           <p data-i18n="method.s1.body">Mapeamos un flujo de trabajo concreto y medimos cuánto tiempo cuesta hoy.</p>
         </div>
         <div class="step">
-          <span class="step-num">2</span>
+          <span class="step-num" aria-hidden="true">2</span>
           <h3 data-i18n="method.s2.title">Piloto</h3>
           <p data-i18n="method.s2.body">Construimos un agente funcional para ese flujo en 2-3 semanas.</p>
         </div>
         <div class="step">
-          <span class="step-num">3</span>
+          <span class="step-num" aria-hidden="true">3</span>
           <h3 data-i18n="method.s3.title">Build</h3>
           <p data-i18n="method.s3.body">Ampliamos a 2-4 flujos, integrados con tus herramientas actuales.</p>
         </div>
         <div class="step">
-          <span class="step-num">4</span>
+          <span class="step-num" aria-hidden="true">4</span>
           <h3 data-i18n="method.s4.title">Cuidado continuo</h3>
           <p data-i18n="method.s4.body">Monitorizamos, ajustamos y añadimos mejoras cada mes.</p>
         </div>
@@ -139,77 +162,159 @@
   <!-- WHY -->
   <section class="why">
     <div class="wrap why-inner">
-      <span class="section-num">04</span>
-      <h2 data-i18n="why.title">Por qué Gradient, y no una plantilla de n8n</h2>
-      <p class="lede" data-i18n="why.body">Casi todo lo que se vende hoy como &laquo;IA&raquo; para negocios profesionales es un panel o un chatbot con guion. Un agente de verdad lee, decide, actúa y deja constancia de principio a fin, sin intervención manual — esa es la diferencia técnica. La otra es de confianza: trabajamos con datos sensibles de tus clientes, así que el cumplimiento RGPD no es un añadido, es la base.</p>
+      <span class="section-num" aria-hidden="true">04</span>
+      <h2 data-i18n="why.title">Un chatbot con guion no es un agente</h2>
+      <p class="lede" data-i18n="why.body">Casi todo lo que se vende hoy como «IA» para despachos profesionales es un panel con reglas o un chatbot con respuestas predefinidas. Un agente de verdad lee lo que entra, decide qué hacer, actúa sobre tus sistemas y deja constancia de cada paso, sin intervención manual y sin plantillas genéricas con el logo cambiado. Esa es la diferencia técnica. La otra es de confianza: trabajamos con datos sensibles de tus clientes, así que el cumplimiento RGPD no es un añadido, es la base.</p>
+    </div>
+  </section>
+
+  <!-- PROOF (replaces old testimonials block, same slot) -->
+  <section class="proof" id="proof">
+    <div class="wrap">
+      <span class="section-num" aria-hidden="true">05</span>
+      <h2 data-i18n="proof.title">Cómo trabajamos, en concreto</h2>
+
+      <div class="proof-grid">
+
+        <!-- 1. Demo video -->
+        <article class="proof-item proof-video">
+          <h3 data-i18n="proof.video.title">Un agente real, en dos minutos</h3>
+          <!-- TODO: replace src below with the demo video URL (YouTube/Vimeo embed, or a .mp4).
+               If self-hosting, swap <iframe> for a <video controls poster="..."> element. -->
+          <div class="video-embed" role="group" aria-label="Vídeo de demostración">
+            <div class="video-placeholder" data-i18n="proof.video.placeholder">
+              Vídeo próximamente
+            </div>
+            <!--
+            <iframe
+              src="{{DEMO_VIDEO_URL}}"
+              title="Demostración de agente Gradient"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            -->
+          </div>
+          <p class="proof-caption" data-i18n="proof.video.caption">Grabación de un flujo real, de entrada a resultado, sin cortes.</p>
+        </article>
+
+        <!-- 2. Repo link -->
+        <article class="proof-item proof-repo">
+          <h3 data-i18n="proof.repo.title">El código, abierto</h3>
+          <p data-i18n="proof.repo.body">Puedes ver cómo está construido esto, y algunos de nuestros agentes de ejemplo, en el repositorio público.</p>
+          <!-- TODO: replace {{GITHUB_REPO_URL}} with the public repository URL -->
+          <a class="repo-link" href="{{GITHUB_REPO_URL}}" target="_blank" rel="noopener noreferrer">
+            <span class="repo-icon" aria-hidden="true">&#9741;</span>
+            <span class="repo-label" data-i18n="proof.repo.cta">Ver el repositorio en GitHub</span>
+            <span class="repo-arrow" aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <!-- 3. Portfolio pricing note -->
+        <article class="proof-item proof-portfolio">
+          <h3 data-i18n="proof.portfolio.title">Estás pronto, y eso te conviene</h3>
+          <p data-i18n="proof.portfolio.body">Gradient es un estudio nuevo. Los precios publicados son precios de portfolio para los primeros clientes: el mismo trabajo, con más tiempo dedicado a tu caso y con acceso directo al que construye. Cuando el portfolio se cierre, esas condiciones se cierran con él.</p>
+        </article>
+
+      </div>
     </div>
   </section>
 
   <!-- PRICING -->
   <section class="pricing" id="precios">
     <div class="wrap">
-      <span class="section-num">05</span>
-      <h2 data-i18n="pricing.title">Precios claros, sin sorpresas</h2>
+      <span class="section-num" aria-hidden="true">06</span>
+      <h2 data-i18n="pricing.title">Precios fijos, sin sorpresas</h2>
+      <p class="lede pricing-subtitle" data-i18n="pricing.subtitle">La mayoría de estudios cotizan por hora, tras un descubrimiento largo, con un precio final que nadie sabe hasta el cierre. Aquí no: tres paquetes, precio fijo, publicado antes de que hables con nosotros.</p>
       <div class="pricing-grid">
         <div class="price-card">
-          <h3 data-i18n="pricing.t1.name">Diagnóstico + Piloto</h3>
-          <p class="price-amount">&euro;1.500&ndash;3.000</p>
-          <p class="price-note" data-i18n="pricing.t1.note">pago único &middot; 2-3 semanas</p>
-          <p data-i18n="pricing.t1.desc">Un flujo de trabajo, mapeado y automatizado. La forma de probar el enfoque antes de comprometerte a más.</p>
+          <h3 class="price-tier-name" data-i18n="pricing.t1.name">Step</h3>
+          <p class="price-amount">&euro;1.500</p>
+          <p class="price-note" data-i18n="pricing.t1.note">pago único</p>
+          <p data-i18n="pricing.t1.desc">Web profesional más una automatización directa para tu primer flujo. El primer paso, sin complicarte.</p>
         </div>
         <div class="price-card is-featured">
           <span class="price-badge" data-i18n="pricing.badge">Más elegido</span>
-          <h3 data-i18n="pricing.t2.name">Build a medida</h3>
-          <p class="price-amount">&euro;4.000&ndash;10.000</p>
-          <p class="price-note" data-i18n="pricing.t2.note">por proyecto &middot; 3-6 semanas</p>
-          <p data-i18n="pricing.t2.desc">2 a 4 flujos de trabajo, integrados con tu email, tu software de gestión y tus herramientas actuales.</p>
+          <h3 class="price-tier-name" data-i18n="pricing.t2.name">Momentum</h3>
+          <p class="price-amount">&euro;3.000</p>
+          <p class="price-note" data-i18n="pricing.t2.note">pago único</p>
+          <p data-i18n="pricing.t2.desc">Web más un agente a medida que resuelve tu mayor cuello de botella. Nuestro paquete más elegido.</p>
         </div>
         <div class="price-card">
-          <h3 data-i18n="pricing.t3.name">Cuidado y optimización</h3>
-          <p class="price-amount">&euro;300&ndash;900<span class="price-period">/mes</span></p>
-          <p class="price-note" data-i18n="pricing.t3.note">continuo</p>
-          <p data-i18n="pricing.t3.desc">Monitorización, ajustes, integraciones que se rompen, y pequeñas mejoras cada mes.</p>
+          <h3 class="price-tier-name" data-i18n="pricing.t3.name">Convergence</h3>
+          <p class="price-amount">&euro;5.000</p>
+          <p class="price-note" data-i18n="pricing.t3.note">pago único</p>
+          <p data-i18n="pricing.t3.desc">Web más 2 a 4 agentes integrados en tus herramientas actuales. Para negocios listos para automatizar de verdad.</p>
         </div>
       </div>
-      <p class="pricing-footnote" data-i18n="pricing.footnote">Los proyectos elegibles pueden financiarse total o parcialmente a través del programa Kit Digital.</p>
+      <div class="retainer-strip">
+        <span class="retainer-name" data-i18n="pricing.t4.name">Drift</span>
+        <span class="retainer-price">&euro;400<span class="price-period" data-i18n="pricing.permo">/mes</span></span>
+        <span class="retainer-desc" data-i18n="pricing.t4.desc">Cuidado continuo tras cualquier paquete: monitorización, ajustes y mejoras cada mes.</span>
+      </div>
+      <p class="pricing-footnote" data-i18n="pricing.footnote">¿Ya tienes web? Cada paquete tiene una versión solo de agentes, más económica. Pregúntanos.</p>
     </div>
   </section>
 
   <!-- FOUNDING CLIENT -->
   <section class="founding">
     <div class="wrap founding-inner">
-      <h2 data-i18n="founding.title">Buscamos 3 clientes fundadores este trimestre</h2>
-      <p data-i18n="founding.body">Gradient es un estudio nuevo — y lo decimos sin rodeos. A cambio de ser un caso de estudio documentado, con cifras reales de horas ahorradas y errores evitados, tu primer proyecto piloto tiene un precio reducido. Oferta limitada a 3 despachos.</p>
-      <a href="#contacto" class="btn btn-primary" data-i18n="founding.cta">Reserva tu plaza</a>
+      <h2 data-i18n="founding.title">Plazas limitadas mientras construimos nuestro portfolio</h2>
+      <p data-i18n="founding.body">Gradient trabaja con un número reducido de despachos a la vez para dar seguimiento cercano a cada proyecto. Los precios de arriba son los mismos para todos: sin descuentos ocultos, sin sorpresas. Pero solo abrimos un puñado de plazas cada trimestre mientras documentamos nuestros primeros casos.</p>
+      <a href="#contacto" class="btn btn-primary" data-booking data-i18n="founding.cta">Reserva tu plaza</a>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contacto">
     <div class="wrap contact-inner">
-      <span class="section-num">06</span>
+      <span class="section-num" aria-hidden="true">07</span>
       <h2 data-i18n="contact.title">Hablemos de tu despacho</h2>
       <p class="lede" data-i18n="contact.body">Cuéntanos qué tarea os quita más tiempo cada semana. En 24 horas te decimos si tiene sentido automatizarla.</p>
-      <form class="contact-form" id="contactForm">
+
+      <div class="contact-actions">
+        <a href="#contacto" class="btn btn-primary" data-booking data-i18n="contact.book">Reserva una llamada</a>
+        <span class="contact-actions-or" data-i18n="contact.or">o escríbenos abajo</span>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
         <div class="form-row">
           <label for="name" data-i18n="contact.name">Nombre</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name" required autocomplete="name">
         </div>
         <div class="form-row">
           <label for="email" data-i18n="contact.email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" required autocomplete="email">
         </div>
         <div class="form-row">
           <label for="company" data-i18n="contact.company">Empresa</label>
-          <input type="text" id="company" name="company">
+          <input type="text" id="company" name="company" autocomplete="organization">
         </div>
         <div class="form-row">
           <label for="message" data-i18n="contact.message">¿Qué tarea os quita más tiempo?</label>
           <textarea id="message" name="message" rows="4" required></textarea>
         </div>
+
+        <!-- Honeypot: real users leave this blank; bots fill everything. Hidden via CSS. -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">No rellenes este campo</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent" data-i18n="contact.consent">
+            He leído y acepto la <a href="/privacidad.html">política de privacidad</a>.
+          </label>
+        </div>
+
         <button type="submit" class="btn btn-primary" data-i18n="contact.send">Enviar</button>
-        <p class="form-note" data-i18n="contact.note">Se abrirá tu cliente de correo con el mensaje ya redactado.</p>
+
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
       </form>
+
+      <p class="contact-data-note">
+        <span data-i18n="contact.data.pre">Trabajamos con documentos de tus clientes. Aquí explicamos </span><a href="/datos.html" data-i18n="contact.data.link">cómo tratamos esos datos</a><span data-i18n="contact.data.post">.</span>
+      </p>
     </div>
   </section>
 
@@ -218,10 +323,17 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <span class="logo-mark small">G</span>
-      <span data-i18n="footer.tagline">Gradient — Barcelona, España</span>
+      <img src="assets/logo-mark.png" alt="" class="logo-mark-img small">
+      <span data-i18n="footer.tagline">Gradient · Barcelona, España</span>
     </div>
+    <p class="footer-tagline2" data-i18n="footer.tagline2">Donde termina el trabajo repetitivo</p>
     <p class="footer-legal" data-i18n="footer.legal">Estudio independiente de automatización con IA. RGPD por diseño.</p>
+    <nav class="footer-legal-links" aria-label="Enlaces legales">
+      <a href="/aviso-legal.html" data-i18n="footer.link.legal">Aviso legal</a>
+      <a href="/privacidad.html" data-i18n="footer.link.privacy">Privacidad</a>
+      <a href="/cookies.html" data-i18n="footer.link.cookies">Cookies</a>
+      <a href="/datos.html" data-i18n="footer.link.data">Datos de clientes</a>
+    </nav>
   </div>
 </footer>
 
